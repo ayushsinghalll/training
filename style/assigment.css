@@ -1,0 +1,20 @@
+body{
+    background-image: url("../source/tree-736885__480.jpg");
+    background-repeat: repeat-x;
+}
+a{
+    color: green;
+}
+.big{
+    font-size: 2rem;
+}
+table{
+    background-color: blue;
+
+}
+tr:nth-child(even) {
+    background: pink;
+}
+h1{
+text-align: center;
+}
