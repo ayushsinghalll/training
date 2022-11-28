@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+  <style>
+    label{
+      font-weight: bold;
+      font-size: large;
+      padding: 12px;
+      margin: auto;
+    }
+  </style>
+</head>
+<body>
+<form action="action.html">
+  <label>Enter First Name:   </label>
+  <input type="text" placeholder="Enter First Name" required/><br>
+  <label>Enter lastname:   </label>
+  <input type="text" placeholder="Enter last name" required/><br>
+  <label>Enter Address:  </label>
+  <textarea rows="3"></textarea>
+  <br>
+  <label>Program Attended: </label>
+  <input type="checkbox"/>HTML
+  <input type="checkbox"/> Java
+  <input type="checkbox"/> Oracle
+  <br>
+  <label>Select the stream you belong to :</label>
+  <input type="radio"/> Mtech
+  <input type="radio"/> EEE
+  <input type="radio"/> CS
+  <input type="radio"/> IT
+  <br>
+  <label>Which training program  would you like to attend </label>
+  <select multiple size="1" name="pref">
+    <option value="ih" selected>html</option>
+    <option value="js">Javascript</option>
+    <option value="oracle">Angular</option>
+    <option value="jv">JAVA
+    </option>
+  </select>
+  <br>
+  <label>Upload your resume</label>
+  <input type="file"/>
+  <br>
+  <input type="button" name="exit" value="exit"/>
+  <input type="reset" name="reset"/>
+  <input type="submit" name="submit">
+</form>
+</body>
+</html>
