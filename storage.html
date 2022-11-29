@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+
+</head>
+<body>
+<form action="succes.html" onsubmit="callme()">
+  <input type="text" id="name" placeholder="Enter the User Name"/><br>
+  <input type="password" id="pass" placeholder="Enter the Password"/><br>
+  <input type="submit"/><br>
+    <input type="reset"/>
+</form>
+<script>
+    function callme(){
+        var name= document.getElementById('name').value;
+        localStorage.setItem('name',name)
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+<form>
+    <input type="button" value="Start"  />
+    <input type="button" value="Stop" /><br>
+
+</form>
+<script>
+    const ws= new WebSocket('ws://localhost:8002');
+    ws.addEventListener('open',
+        ()=>{console.log('we are connected ');
+            ws.send('hey , how are you');
+        });
+
+
+</script>

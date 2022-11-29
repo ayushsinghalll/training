@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Layout</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        header{
+            background-color: #777;
+            padding: 2px;
+            text-align: center;
+            font-size: 2em;
+            color: blue;
+        }
+        section{
+            display: flex;
+        }
+        nav{
+            flex:1;
+            background-color: aqua;
+            padding: 20px;
+        }
+        article{
+            flex: 3;
+            background-color: green;
+            padding: 5px;
+        }
+
+        nav li{
+            list-style-type: none;
+            padding: 0;
+        }
+        footer{
+            background-color: #777777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+        @media (max-width: 600px) {
+        section{
+            -webkit-flex-direction: column;
+            flex-direction: column;
+        }
+        }
+    </style>
+</head>
+<body>
+<h2>css  flex layout</h2>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta unde in dolor quia cum dolores asperiores odit distinctio, vel maiores veritatis ullam obcaecati,
+
+    eum ea impedit alias? Quas, eveniet aut!
+</p>
+
+<header>
+    Technologies
+</header>
+<section>
+    <nav>
+        <ul>
+            <li><a href="#">Java</a> </li>
+            <li><a href="#">HTML</a> </li>
+            <li><a href="#">CSS</a> </li>
+            <li><a href="#">JavaScript</a> </li>
+
+        </ul>
+    </nav>
+    <article>
+        <h1>Java</h1>
+        <p>JAva is amazing Language, very robust</p>
+    </article>
+</section>
+<footer>
+    <p>Footer</p>
+</footer>
+</body>
+</html>
