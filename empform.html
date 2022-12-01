@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Form</title>
+</head>
+<body>
+
+<form method="post">
+    <label for="empId">Employee ID</label><br>
+    <input type="number" required/><br>
+    <label>First Name</label><br>
+    <input type="text" required/><br>
+    <label>DepartMent Name</label><br>
+    <input type="text" required/>
+    <br>
+    <label>Enterv Email</label><br>
+    <input type="email" required/>
+    <br>
+    <label>UserName</label><br>
+    <input type="text" minlength="5" maxlength="20" required/>
+    <br>
+    <label>Password</label><br>
+    <input type="password" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$"><br>
+    <input type="submit"/>
+</form>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animation</title>
+  <style>
+    a:hover p{
+      opacity: inherit;
+      height: 100px;
+      width: 150px;
+      background-color: red;
+      color: black;
+      font-size: x-large;
+    }
+    p:not(.p1){
+      color: red;
+    }
+    #btn:not(:disabled){
+      border: 5px solid green;
+      background-color: orangered;
+      height: 50px;
+      width: 100px;
+    }
+    #shd{
+      text-align: center;
+      font-size: x-large;
+      text-shadow: 8px 2px 4px orange, -8px -2px 4px red ;
+    }
+  </style>
+  <link rel="stylesheet" href="style/assigment.css">
+</head>
+<body>
+<a><p>This is animation</p></a>
+
+<table>
+  <tr>
+    <td>Heading</td>
+    <td>paragraph</td>
+  </tr>
+  <tr>
+    <td>Bullet</td>
+    <td>Silver</td>
+  </tr>
+  <tr>
+    <td>Bullet</td>
+    <td>Silver</td>
+  </tr>
+  <tr>
+    <td>Bullet</td>
+    <td>Silver</td>
+  </tr>
+  <tr>
+    <td>Bullet</td>
+    <td>Silver</td>
+  </tr>
+</table>
+<p class="p1">Html jbbibuhc</p>
+<p class="p2">JAva is a programming language</p>
+<p class="p1">Javascript is a scripting language</p>
+<button id="btn" value="submit" disabled >Submit</button>
+<p id="shd">This is a shadow example</p>
+</body>
+</html>

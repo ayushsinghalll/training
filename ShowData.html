@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="p1"></p>
+<p id="p2"></p>
+<p id="p3"></p>
+<p id="p4"></p>
+<p id="p5"></p>
+<p id="p6"></p>
+<script>
+    window.onload=function (){
+        document.getElementById('p1').innerText=localStorage.getItem('name');
+        document.getElementById('p2').innerText=localStorage.getItem('email');
+        document.getElementById('p3').innerText=localStorage.getItem('mobile');
+        document.getElementById('p4').innerText=localStorage.getItem('country');
+        document.getElementById('p5').innerText=localStorage.getItem('gender');
+        document.getElementById('p6').innerText=localStorage.getItem('hobbies');
+
+
+    }
+</script>
+</body>
+</html>
