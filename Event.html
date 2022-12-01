@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event</title>
+</head>
+<body onmousemove="mousemove(event)">
+<div id="mouseovers"></div>
+    <form>
+        <label for="name"></label><input type="text" onfocus="focus1()" placeholder="Enter first name" id="name"/><br>
+        <label for="last"></label><input type="text" onblur="blur1()" placeholder="Enter last name" id="last"/><br>
+        <input type="submit"/><br>
+    </form><br>
+<h2 onclick="one()" id="h">Heading</h2>
+   <p id="p1" ondblclick="move()">Click Here</p>
+
+<video src="source/mylivewallpapers.com-One-Piece-Ship.mp4"  width="200" height="200"
+       id="audio" controls></video><br>
+<audio src="source/Chand%20Sifarish%20_%20Full%20Song%20_%20Fanaa%20_%20Aamir%20Khan,%20Kajol%20_%20Shaan,%20Kailash%20Kher%20_%20J.m4a"
+       id=" video" controls></audio>
+<br>
+Select Fruit:
+<label for="ddlFruits">Select </label><select id="ddlFruits" onchange="GetSelectedTextValue(this)">
+    <option value=""></option>
+    <option value="1">Apple</option>
+    <option value="2">Mango</option>
+    <option value="3">Orange</option>
+</select><br>
+
+ <label for="myCheck">Checkbox:</label>
+<input type="checkbox" id="myCheck" onclick="myFunction()">
+<p id="text" style="display:none">Checkbox is CHECKED!</p>
+
+<script type="text/javascript">
+    function GetSelectedTextValue(ddlFruits) {
+        var selectedText = ddlFruits.options[ddlFruits.selectedIndex].innerHTML;
+        var selectedValue = ddlFruits.value;
+        alert("Selected Text: " + selectedText + " Value: " + selectedValue);
+    }
+</script>
+
+<script>
+    function focus1(){
+        document.getElementById("name").style.background="green";
+    }
+    function blur1() {
+
+        document.getElementById("last").style.background="red";
+    }
+    function move(){
+        document.getElementById("p1").style.backgroundColor="red";
+        document.getElementById("p1").style.border="5px";
+    }
+    function one(){
+        document.getElementById("h").style.background="yellow";
+    }
+    function mousemove(event){
+        let x = event.clientX;
+        let y = event.clientY;
+        document.getElementById("mouseovers").innerText=`x value ${x} y value ${y}`;
+    }
+
+    var audio = document.getElementById('audio');
+
+    audio.load();
+
+    // Can play
+    audio.oncanplay = function() {
+        audio.play();
+        console.log(' video Playing...');
+    };
+
+    // Cannot play
+    audio.onerror = function() {
+        // error shows in Safari/IE/Edge but not in Chrome/Firefox
+        console.log('Error! video sources are not available');
+    };
+
+    var video = document.getElementById(' video');
+
+    video.load();
+
+    // Can play
+    video.oncanplay = function() {
+        video.play();
+        console.log(' audio Playing...');
+    };
+
+    // Cannot play
+    video.onerror = function() {
+        // error shows in Safari/IE/Edge but not in Chrome/Firefox
+        console.log('Error! audio sources are not available');
+    };
+
+function select() {
+ let selec=   document.getElementById("select");
+document.getElementById("present").innerText=`select item ${selec}`;
+
+}
+    function myFunction() {
+        // Get the checkbox
+        var checkBox = document.getElementById("myCheck");
+        // Get the output text
+        var text = document.getElementById("text");
+
+        // If the checkbox is checked, display the output text
+        if (checkBox.checked === true){
+            text.style.display = "block";
+        } else {
+            text.style.display = "none";
+        }
+    }
+</script>
+</body>
+</html>

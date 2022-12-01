@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+  <title> Track Mouse </title>
+  <script type="text/javascript">
+    function mouse_position()
+    {
+      let e = window.event;
+
+      let posX = e.clientX;
+      let posY = e.clientY;
+
+      document.Form1.posx.value = posX;
+      document.Form1.posy.value = posY;
+
+      let t = setTimeout(mouse_position,100);
+
+    }
+  </script>
+
+</head>
+
+<body onload="mouse_position()">
+<form name="Form1">
+  POSX: <label>
+  <input type="text" name="posx">
+</label><br>
+  POSY: <label>
+  <input type="text" name="posy">
+</label><br>
+</form>
+</body>
+</html>
