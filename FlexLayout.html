@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Layout</title>
+  <style>
+    body{
+      background-color: aqua;
+    }
+    #div{
+     display: flex;
+    }
+    #div1{
+        flex: inherit;
+        border: 3px solid hsl(0 30% 100%);
+        gap: 2px;
+    }
+    #div2{
+        border: 3px solid hsl(0 30% 100%);
+        flex: 1;
+    }
+    #div3{
+        border: 3px solid hsl(0 30% 100%);
+        flex :inherit;
+        gap: 2px;
+    }
+    #div4:has(> :last-child:nth-child(5)){
+        background-color: hsl(var(--yellow)/.3);
+    }
+    #div4{
+        display: flex;
+        gap:1rem;
+        padding: 1rem;
+        background-color: hsl(var(--color, 0 30% 100%));
+        border: 3px solid hsl(var(--color, 0 30% 100%));
+
+    }
+    #div4 > div{
+
+        flex:1;
+        padding :2rem;
+        background-color: hsl(0 30% 100%);
+        border: 3px solid hsl(0 30% 100%);
+    }
+
+  </style>
+</head>
+<body>
+<div id="div">
+  <div id="div1">div1</div>
+  <div id="div2">div2</div>
+  <div id="div3">div3</div>
+</div>
+<br>
+<div id="div4">
+    <div>div1</div>
+    <div>div2</div>
+    <div>div3</div>
+    <div>div4</div>
+    <div>div5</div>
+</div>
+</body>
+</html>

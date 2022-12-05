@@ -1,0 +1,53 @@
+@import "basic";
+$color:red;
+$font:50px;
+$size:20;
+$var1:green;
+$var2:darkyellow;
+
+h2 {
+  background-color: $color;
+  font-size: $font;
+}
+h3{
+  background-color: if(2+2=5,cyan,green);
+
+}
+.c1{
+  @if(1+1==2){
+    background-color: red;
+  }
+  @if(null){
+    border: 10px solid red;
+  }
+}
+.p1{
+  @if($size<50){
+    color: black;
+    font-size: x-large;
+  }
+  @else if($size==30){
+    color:blue;
+    font-size: 5rem;
+  }
+}
+$roseColor:if(true,yellow,blue);
+$jasmineColor:if(false,papayawhip,darksalmon);
+$lotusColor:if(6>3,purple,aqua);
+p:nth-of-type(1){
+  background-color: $roseColor;
+  @if(lightness($roseColor) > 50%){
+    border:1px solid blue;
+  }
+  @else{
+
+    border:2px dashed deeppink;
+  }
+}
+
+p:nth-of-type(2){
+  @if 2+2==4 {background-color: $jasmineColor;}
+  @if 6 >5 {border: 1px dotted $lotusColor;}
+  @if true{font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+
+}
