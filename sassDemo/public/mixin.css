@@ -1,0 +1,14 @@
+p {
+  background-color: green;
+  font-size: 1.5rem;
+  background-color: green;
+  font-size: 1.5rem;
+  color: #ded308;
+}
+
+a:hover {
+  font-size: larger;
+  border: 150px solid green;
+}
+
+/*# sourceMappingURL=mixin.css.map */

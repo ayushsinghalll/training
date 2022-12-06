@@ -1,0 +1,24 @@
+$color: #ded308;
+$fontSize:1.5rem;
+$size:200px;
+
+@mixin value1{
+  background-color: green;
+
+  font-size: $fontSize;
+}
+@mixin  value2{
+@include value1;
+color:$color;
+}
+@mixin value3($size,$color){
+  border: $size solid $color;
+}
+p{
+  @include value1;
+  @include value2;
+}
+a:hover{
+  font-size: larger;
+  @include value3(150px,green)
+}

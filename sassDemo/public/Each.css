@@ -1,0 +1,53 @@
+.c_25px {
+  font-size: 25px;
+}
+
+.c_30px {
+  font-size: 30px;
+}
+
+.c_40px {
+  font-size: 40px;
+}
+
+.c_50px {
+  font-size: 50px;
+}
+
+.c_gray {
+  background-color: gray;
+  color: black;
+}
+
+.c_brown {
+  background-color: brown;
+  color: yellow;
+}
+
+.c_plum {
+  background-color: plum;
+  color: darkviolet;
+}
+
+.c_pink {
+  background-color: pink;
+  color: green;
+}
+
+h1 {
+  border: 1px solid red;
+}
+
+h2 {
+  border: 2px dashed green;
+}
+
+h3 {
+  border: 2rem double black;
+}
+
+h4 {
+  border: 1.5rem solid pink;
+}
+
+/*# sourceMappingURL=Each.css.map */

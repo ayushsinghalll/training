@@ -1,0 +1,12 @@
+$mediaColor:lavendar;
+$mediaFontSize:24px;
+
+@media(min-width:600px) {
+body{
+  background-color: $mediaColor;
+}
+  .logo{
+    width: 400px;
+    margin: 50px;
+  }
+}

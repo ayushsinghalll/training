@@ -1,0 +1,37 @@
+.p1 {
+  padding: 20px;
+  color: black;
+  border: 1px solid black;
+  height: 4px;
+  background-color: green;
+  width: 200px;
+}
+
+.p2 {
+  padding: 40px;
+  color: black;
+  border: 1px solid black;
+  height: 8px;
+  background-color: green;
+  width: 400px;
+}
+
+.p3 {
+  padding: 60px;
+  color: black;
+  border: 1px solid black;
+  height: 12px;
+  background-color: green;
+  width: 600px;
+}
+
+.p4 {
+  padding: 80px;
+  color: black;
+  border: 1px solid black;
+  height: 16px;
+  background-color: green;
+  width: 800px;
+}
+
+/*# sourceMappingURL=ForDemo.css.map */

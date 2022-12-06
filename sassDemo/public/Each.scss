@@ -1,0 +1,24 @@
+@each $font in 25px,30px,40px, 50px{
+  .c_#{$font}{
+    font-size: $font;
+  }
+}
+@each $color,$textcolor in ( gray,black),( brown,yellow),(plum,darkviolet),( pink,green){
+  .c_#{$color}{
+    background-color: $color;
+    color:$textcolor;
+  }
+}
+//@each in map
+@each $headings,$border in(
+        h1:1px solid red,
+        h2:2px dashed green,
+        h3:2rem double black,
+        h4:1.5rem solid pink
+)
+{
+  #{$headings}{
+    border:$border;
+  }
+
+}
