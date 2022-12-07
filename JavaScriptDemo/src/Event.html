@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event</title>
+</head>
+<style>
+    .geeks {
+        width: 100%;
+        height: 600px;
+        background-size: cover;
+    }
+</style>
+<body class="geeks">
+<label for="input"></label><input type="text" placeholder="Enter the text" id="input" onkeypress="press()"/>
+<p id="print"></p>
+
+
+<script>
+    let div =
+        document.querySelector(".geeks");
+
+    div.addEventListener(
+        "mousemove", function (e) {
+            x = e.offsetX;
+            y = e.offsetY;
+            div.style.backgroundColor
+                = `rgb(${x}, ${y}, ${x - y})`;
+        });
+</script>
+<script src="../js/Event.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Clock</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<div id="DigitalCLOCK" class="clock" onload="showTime()"></div>
+<script>
+
+  function showTime(){
+    const date = new Date();
+    let h = date.getHours();
+    let m = date.getMinutes();
+    let s = date.getSeconds();
+
+
+    if(h == 0){
+      h = 12;
+    }
+
+    if(h > 12){
+      h = h - 12;
+
+    }
+
+    h = (h < 10) ? "0" + h : h;
+    m = (m < 10) ? "0" + m : m;
+    s = (s < 10) ? "0" + s : s;
+
+    const time = h + ":" + m + ":" + s;
+    document.getElementById("DigitalCLOCK").innerText = time;
+    document.getElementById("DigitalCLOCK").textContent = time;
+
+    setTimeout(showTime, 1000);
+
+  }
+
+  showTime();
+</script>
+
+</body>
+</html>
