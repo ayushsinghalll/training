@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type = "text" id = "txt" />
+<input type = "button" id = "go" />
+
+<script>
+    var go = document.getElementById("go");
+    var txt = document.getElementById("txt");
+
+    txt.addEventListener("keypress", function(event) {
+        event.preventDefault();
+        if (event.keyCode === 15 && event.keyCode===18)
+            go.click();
+        console.log("Hello world")
+    });
+</script>
+</body>
+</html>
