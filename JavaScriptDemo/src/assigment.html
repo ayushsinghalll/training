@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assigment Template</title>
+</head>
+<style>
+    .flexbox{
+        display: flex;
+        margin: 50px;
+    }
+    .temp1{
+        border: 1px solid red;
+        background-color: red;
+        flex: 33%;
+        width: 50px;
+        height: 75px;
+        margin: 0 10px;
+        text-align: center;
+    }
+    .temp2{
+        border: 1px solid red;
+        background-color: yellow;
+        flex: 33%;
+        width: 50px;
+        height: 75px;
+        margin: 0 10px;
+        text-align: center;
+
+    }
+    .temp3{
+        border: 1px solid red;
+        background-color: grey;
+        flex: 33%;
+        width: 50px;
+        height: 75px;
+        margin: 0 10px;
+        text-align: center;
+    }
+    .temp4{
+
+        border: 1px solid blue;
+        background-color: blue;
+        width: 100%;
+        color: yellow;
+        text-align: center;
+    }
+</style>
+<body>
+<div class="flexbox">
+    <div class="temp1">
+<template id="mytemplate1">
+</template>
+<my-template1></my-template1>
+    </div>
+    <div class="temp2">
+<h1>Hello heading</h1>
+    </div>
+    <div class="temp3">
+<template id="mytemplate2">
+</template>
+<my-template2></my-template2>
+    </div>
+</div>
+<div class="temp4">
+<template id="mytemplate3">
+</template>
+<my-template3></my-template3>
+</div>
+</body>
+<script src="../js/assigment.js"></script>
+</html>

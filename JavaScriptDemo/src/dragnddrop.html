@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <style>
+        #div1{
+            border:1px solid red;
+            height: 100px;
+            width: 200px;
+        }
+    </style>
+
+</head>
+<body>
+<h3>Drag Fruit here</h3>
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+<h3>choose fruit</h3>
+<ul>
+    <li draggable="true" id="drag1" ondragstart="drag(event)" v >Apple</li>
+    <li draggable="true" id="drag2" ondragstart="drag(event)" >Kiwi</li>
+    <li draggable="true"  id="drag3" ondragstart="drag(event)" >orange</li>
+</ul>
+<script>
+    function allowDrop(ev) {
+        ev.preventDefault();
+    }
+
+    function drag(ev) {
+        ev.dataTransfer.setData("li", ev.target.id);
+    }
+
+    function drop(ev) {
+        ev.preventDefault();
+        const data = ev.dataTransfer.getData("li");
+        ev.target.appendChild(document.getElementById(data));
+    }
+</script>
+</body>
+</html>

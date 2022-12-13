@@ -20,4 +20,3 @@ customElements.define("my-template1",
 
 
 )
-Footer

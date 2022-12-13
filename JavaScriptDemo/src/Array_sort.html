@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Array Sort</title>
+</head>
+<style>
+  .container{
+    display: flex;
+  }
+  #show,#sortName,#sortSalary{
+    width: 25%;
+    border: 2px solid red;
+    padding: 5px 5px;
+    margin: 5px;
+  }
+</style>
+<body>
+<form id="emp-form" >
+  <label>
+    <input type="number" id="id" placeholder="Enter Id">
+  </label>
+  <br>
+  <label>
+    <input type="text" id="name" placeholder="Enter Name">
+  </label>
+  <br>
+  <label>
+    <input type="number" id="salary" placeholder="Enter Salary">
+  </label>
+  <br>
+  <input type="submit" value="submit">
+</form>
+
+<div class="container">
+<button id="show" onclick="showAll()">Show All Employee</button>
+<br>
+<button id="sortName" onclick="sortName()">Sort All Names</button>
+<br>
+<button id="sortSalary" onclick="sortSalary()">Sort All Salary</button>
+</div>
+<p id="show1"></p>
+</body>
+<script src="../js/Array_sort.js"></script>
+</html>

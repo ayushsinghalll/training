@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+  .slider {
+    border-radius: 5px;
+    background: #E0E0E0;
+    background: linear-gradient(left top, #E0E0E0, #EEEEEE);
+    width: 310px;
+    height: 15px;
+    margin: 5px;
+  }
+
+  .thumb {
+    width: 10px;
+    height: 25px;
+    border-radius: 3px;
+    position: relative;
+    left: 10px;
+    top: -5px;
+    background: blue;
+    cursor: pointer;
+  }
+</style>
+<body>
+<div id="slider" class="slider">
+  <div class="thumb"></div>
+</div>
+<script>
+  let thumb = slider.querySelector('.thumb');
+  thumb.onmousedown = function(event) {
+    //
+
+    // shiftY not needed, the thumb moves only horizontally
+    document.addEventListener('mousemove', onMouseMove);
+    document.addEventListener('mouseup', onMouseUp);
+    function moveAt(pageX){
+      thumb.style.left=pageX-thumb.offsetWidth/0.5 +'px'
+    }
+    function onMouseMove(event) {
+      //
+    moveAt(event.pageX)
+    }
+    function onMouseUp() {
+      //
+      document.removeEventListener('mousemove',onMouseMove)
+    }
+  }
+  </script>
+</body>
+</html>
