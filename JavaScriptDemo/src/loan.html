@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Loan Calculator</title>
+  <link rel="stylesheet" href="../style/loan.css">
+</head>
+<body>
+<center>
+<table>
+  <th><h1>Loan Calculator</h1></th>
+  <tr><td>Amount of the loan ($):</td>
+    <td><input id="amount" onchange="calculate();"></td>
+    </tr>
+  <tr><td>Annual interest (%):</td>
+    <td><input id="apr" onchange="calculate();"></td></tr>
+  <tr><td>Repayment period (years):</td>
+    <td><input id="years" onchange="calculate();"></td>
+  <tr>
+    <td><button id="calculate" onclick="calculate();">Calculate</button></td></tr>
+  <tr><
+    <td><span class="output" id="payment"></span></td></tr>
+  <tr>
+    <td><span class="output" id="total"></span></td></tr>
+  <tr>
+    <td><span class="output" id="totalinterest"></span></td></tr>
+</table>
+</center>
+</body>
+<script src="../js/loan.js"></script>
+</html>
