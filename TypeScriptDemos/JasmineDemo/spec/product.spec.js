@@ -8,8 +8,6 @@ beforeEach(function(){
 
 });
 
-
-
 describe("Calculator test suite",function(){
 
     it("add function test",function(){
